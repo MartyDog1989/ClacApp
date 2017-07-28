@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("value", Double.parseDouble(sb1.toString()) * Double.parseDouble(sb2.toString()));
             startActivity(intent);
         }
-        else if(v.getId() == R.id.button4){
+        else {
             Intent intent = new Intent(this, SecondActivity.class);
             if(Double.parseDouble(sb2.toString()) == 0) {
                 intent.putExtra("value1", "ゼロでは除算できません");
